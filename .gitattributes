@@ -1,0 +1,5 @@
+*.dat -text
+*.cbl text eol=lf
+*.cpy text eol=lf
+*.asm text eol=lf
+*.bms text eol=lf

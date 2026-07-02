@@ -1,0 +1,21 @@
+*---------------------------------------------------------------------
+*  DMDDBD  デマンド実績 DB (HDAM/OSAM)      東西電力 電算部  H22.06
+*  ※H24.10 に履歴系は Db2 (RACS.DMD_RIREKI) へ移行済.
+*    本 DB は 30分値の当日分保持のみに縮退して現存する
+*---------------------------------------------------------------------
+         DBD   NAME=DMDDBD,ACCESS=(HDAM,OSAM),                         X
+               RMNAME=(DFSHDC40,3,120)
+         DATASET DD1=DMDDS,DEVICE=3390,SIZE=4096
+*
+         SEGM  NAME=DMDROOT,PARENT=0,BYTES=32
+         FIELD NAME=(SPTNO,SEQ,U),BYTES=22,START=1,TYPE=C
+         FIELD NAME=DENATU,BYTES=2,START=23,TYPE=C
+*
+         SEGM  NAME=DMDKOMA,PARENT=DMDROOT,BYTES=16
+         FIELD NAME=(KOMAJI,SEQ,U),BYTES=4,START=1,TYPE=C
+         FIELD NAME=DMDVAL,BYTES=5,START=5,TYPE=C
+         FIELD NAME=HANTEI,BYTES=1,START=10,TYPE=C
+*
+         DBDGEN
+         FINISH
+         END

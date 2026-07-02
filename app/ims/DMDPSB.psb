@@ -1,0 +1,8 @@
+*---------------------------------------------------------------------
+*  DMDPSB  デマンド受付用 PSB               東西電力 電算部  H22.06
+*---------------------------------------------------------------------
+DMDPCB   PCB   TYPE=DB,DBDNAME=DMDDBD,PROCOPT=A,KEYLEN=26
+         SENSEG NAME=DMDROOT,PARENT=0
+         SENSEG NAME=DMDKOMA,PARENT=DMDROOT
+         PSBGEN LANG=COBOL,PSBNAME=DMDPSB
+         END

@@ -1,0 +1,19 @@
+=== RaichoDemo を GitHub へ push する手順 ===
+
+このフォルダは git 初期化・全194ファイルコミット・remote設定まで
+完了済みです。あとは push だけ:
+
+  cd RaichoDemo
+  git push -f origin main
+
+※ -f は、現在 GitHub 上にある不完全版 (COBOL 13本欠落・CI無し・
+   textClipping混入) を完全版で置き換えるためです。
+※ 認証はご自身の環境で: gh CLI (gh auth login) 済みならそのまま、
+   またはユーザー名+Personal Access Token を git のプロンプトへ。
+
+push 後の自動確認:
+  - .github/workflows/ci.yml が効き、Actions が 56 ゲートを実行
+  - Actions タブが green になれば完全アップロードの機械的証明
+
+push 後に Claude に「確認して」と言えば、API 突合 (ローカル194
+ファイル vs リモート) を再実行します。

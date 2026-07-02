@@ -1,0 +1,95 @@
+{
+  "_comment": "MVSカタログ模擬: DSN -> 実体パス (DD割当検査とログ用)",
+  "RACS.LOADLIB": {
+    "path": "tests/bin",
+    "type": "PDS"
+  },
+  "RACS.MTRDBD.DBDLIB": {
+    "path": "app/ims/DMDDBD.dbd",
+    "type": "PDS"
+  },
+  "RACS.MTRMAST": {
+    "path": "app/data/portable/MTRMAST.dat",
+    "type": "PS"
+  },
+  "RACS.KYKMAST": {
+    "path": "app/data/portable/KYKMAST.dat",
+    "type": "VSAM"
+  },
+  "RACS.JYUMAST": {
+    "path": "app/data/portable/JYUMAST.dat",
+    "type": "VSAM"
+  },
+  "RACS.KENFILE": {
+    "path": "app/data/portable/KENFILE.dat",
+    "type": "VSAM"
+  },
+  "RACS.RYOFILE": {
+    "path": "app/data/portable/RYOFILE.dat",
+    "type": "VSAM"
+  },
+  "RACS.TANKA": {
+    "path": "app/data/portable/TANKA.dat",
+    "type": "PS"
+  },
+  "RACS.KENSHIN.JUSHIN": {
+    "path": "app/data/portable/KENVB.dat",
+    "type": "PS"
+  },
+  "RACS.KENSHIN.HENSYU": {
+    "path": "app/data/portable/KENHEN.dat",
+    "type": "PS"
+  },
+  "RACS.KENSHIN.NG": {
+    "path": "app/data/portable/KENNG.dat",
+    "type": "PS"
+  },
+  "RACS.KENSHIN.SORTED": {
+    "path": "app/data/portable/KENCHK.dat",
+    "type": "PS"
+  },
+  "RACS.KENSHIN.ERRACM": {
+    "path": "app/data/portable/KENSUM.dat",
+    "type": "PS"
+  },
+  "RACS.KENSHIN.CHECK": {
+    "path": "app/data/portable/KENCHK.dat",
+    "type": "PS"
+  },
+  "RACS.RYOKIN.ERR": {
+    "path": "app/data/portable/RYOERR.dat",
+    "type": "PS"
+  },
+  "RACS.KENSHINH.PRT": {
+    "path": "app/data/portable/STMLST.dat",
+    "type": "PS"
+  },
+  "RACS.SHUNO.JUSHIN": {
+    "path": "app/data/portable/SHUIN.dat",
+    "type": "PS"
+  },
+  "RACS.SHUNO.NG": {
+    "path": "app/data/portable/SHUMEI.dat",
+    "type": "PS"
+  },
+  "RACS.TAINO.LIST": {
+    "path": "app/data/portable/TAILST.dat",
+    "type": "PS"
+  },
+  "RACS.GETSUM": {
+    "path": "app/data/portable/GETSUM.dat",
+    "type": "PS"
+  },
+  "RACS.GETSUM.ERR": {
+    "path": "app/data/portable/GETERR.dat",
+    "type": "PS"
+  },
+  "RACS.KYKMST2": {
+    "path": "app/data/portable/KYKMST2.dat",
+    "type": "PS"
+  },
+  "RACS.CNV.ERR": {
+    "path": "app/data/portable/CNVERR.dat",
+    "type": "PS"
+  }
+}
